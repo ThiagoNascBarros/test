@@ -11,14 +11,14 @@
 
 html, body{
     width: 100%;
-    height: 100vh;
+    height: 1048px;
     margin: 0;
     padding: 0;
 }
 
 body{
     width: 100%;
-    height: 100vh;
+    height: 1048px;
     background-color: #000;
     overflow-x: hidden;
 }
