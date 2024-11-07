@@ -1,0 +1,169 @@
+main{
+    margin: 0 auto;
+    height: 2911px;
+}
+
+.imgInicio {
+    max-width: 100vw;
+    height: auto;
+    filter: brightness(0.25);
+    z-index: 1;
+}
+
+.text-overlay{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: translate(-10%, -20%);
+    text-align: left;
+    max-width: 90%;
+    z-index: 2; /* Coloca o texto sobre a imagem */
+}
+
+.titleMain{
+    font-size: 2.25em;
+    color: #fff;
+    margin-top: 160px;
+    margin-right: 180px;
+}
+
+.pMain{
+    font-size: 1em;
+    margin-left: 40px;
+    margin-top: 1vh;
+    white-space: nowrap
+}
+
+.pMainFrase{
+    text-align: right;
+    margin-left: 870px;
+    margin-top: -190px;
+    font-size: 1.7em;
+    z-index: 2;
+    position: absolute;
+    white-space: nowrap
+}
+
+.red{
+    color: #FF0000;
+}
+
+
+.container{
+    display: flex;
+    gap: 7px;
+    margin-top: -40px;
+    margin-right: 15px;
+}
+
+hr {
+    border: none; /* Remove as bordas padrões */
+    height: 50vh; /* Altura da linha */
+    background-color: #FF0000; /* Cor da linha */
+    width: 4px; /* Largura da linha */
+    margin: 5px; /* Centraliza e adiciona margens */
+}
+
+.container .linhaDois{
+    background-color: #fff;
+    height: 40vh;
+}
+
+.containerImgMarcas{
+    margin-top: -4px;
+    background-color: #000;
+    width: 100vw;
+    height: 173px;
+    display: flex;
+    gap: 140px;
+    align-items: center;
+    padding: 0px 35px;
+}
+
+.liqui{
+    width: 80px;
+    height: 52px;
+}
+.pirelli{
+    width: 140;
+    height: 93px;
+}
+
+.motul{
+    width: 140px;
+    height: 140px;
+}
+
+.brid{
+    width: 55px;
+    height: 55px;
+}
+
+.good{
+    width: 175px;
+    height: 34px;
+}
+
+.cofab{
+    width: 160px;
+    height: 32px;
+}
+
+.services{
+    width: 100vw;
+    height: 872px;
+}
+
+.containerImgServices{
+    margin-top: -4px;
+}
+
+.services{
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+}
+
+.imgServices{
+    width: 100vw;
+    height: auto;
+    filter: brightness(0.25);
+    display: block;
+}
+
+.textServicesTitle{
+    text-align: center;
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: -650px;
+    left: 40%;
+    right: 41%;
+    z-index: 3;
+    white-space: nowrap; 
+}
+
+.ulButtonsServices{
+    list-style: none;
+    display: flex;
+    gap: 140px;
+}
+
+.ulButtonsServices li{
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 760px) {
+
+    main{
+        margin: 0 auto;
+        padding: 100px 0px;
+        height: 2911px;
+    }
+    
+    .imgInicio {
+        max-width: 100vw;
+        height: auto;
+    }
+}

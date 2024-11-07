@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexGarage Admin</title>
+    <link class="iconImg" rel="icon" href="/public/images/Ícones/logoBarraNavegacao.png" type="image/x-icon">
+    <link rel="stylesheet" href="/public/css/admin/styleAdmin.css">
+    <script src="/public/js/menu.js" defer></script>
+    <script src="/public/js/buscarServicos.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-color: #000;">
+    <header>
+        <a href="home.html"><img class="logo" src="/public/images/Ícones/logoApexGarage.jpeg" alt="Logo ApexGarage" draggable="false"></a>
+        <nav class="nav-desktop">
+            <ul class="ul-desktop">
+                <li class="li-desktop"><a href="/src/pages/home.html"><p class="inicio">Início</p></a></li>
+                <li class="li-desktop"><a href="/src/pages/agendamento.html"><p class="servicos">Agendamento</p></a></li>
+                <li class="li-desktop"><a href="contato.html"><p class="contato">Contato</p></a></li>
+                <li class="li-desktop"><a class="user" href="user.html"><img src="/public/images/Ícones/user.svg" draggable="false" alt=""></a></li>
+            </ul>
+        </nav>
+
+        <div class="btn-abrir-menu right" id="btn-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30.25" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+        </div>
+        <div class="menu-mobile" id="menu-mobile">
+            <div class="btn-fechar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="90" width="30" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>            
+            </div>
+                <nav class="nav-mobile">
+                <ul  class="ul-mobile">
+                    <li><a href="/src/pages/home.html"><p class="inicio">Início</p></a></li>
+                    <li><a href="/src/pages/agendamento.html"><p class="servicos">Agendamento</p></a></li>
+                    <li><a href="#contato"><p class="contato">Contato</p></a></li>
+                    <li><a href="#idioma"><p>Idioma</p></a></li>
+                    <li><a href="/src/pages/user.html"><p>Perfil</p></a></li>
+                </ul>
+            </nav>
+            <div class="overlay-menu" id="overlay-menu"></div>
+    </header>
+
+    <main>
+        <div class="icon">
+            <img class="userImg" src="/public/images/Ícones/account_circle.svg" alt="Icone de usuário">
+        </div>
+        <div class="textNameUser">
+            <p class="nameUser">Olá, Admin</p>
+            <p class="textServicosAgendados">Serviços a fazer</p>
+            <div class="table-responsive container">
+                <!-- Adicionar o tabela de serviços agendados -->
+                <table class="table-admin">
+                    <thead>
+                        <tr>
+                            <td>ID</td>
+                            <td>Nome</td>
+                            <td>Serviços</td>
+                            <td>Preço</td>
+                            <td>Feitos</td>
+                        </tr>
+                    </thead>
+                    <tbody class="list-services">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img id="logoFooter" src="/public/images/Ícones/Frame 1.png" alt="logoApexGarage">
+        <ul class="listadecontatos">
+            <li><a href="https://facebook.com"><img src="/public/images/Ícones/facebook.svg" alt=""></a></li>
+            <li><a href="https://instagram.com"><img src="/public/images/Ícones/instagram.svg" alt=""></a></li>
+            <li><a href="https://call.com"><img src="/public/images/Ícones/call.svg" alt=""></a></li>
+            <li><a href="https://apexgarage@contato.com"><img class="mail" src="/public/images/Ícones/mail.svg" alt=""></a></li>
+        </ul>
+        <p class="copy">&copy 2024 ApexGarage</p>
+        <hr class="linhaFooter">
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/public/js/login.js"></script>
+</body>
+</html>
