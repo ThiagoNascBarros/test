@@ -14,6 +14,7 @@ html, body{
     height: 1048px;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 body{
@@ -21,4 +22,5 @@ body{
     height: 1048px;
     background-color: #000;
     overflow-x: hidden;
+    overflow: hidden;
 }
